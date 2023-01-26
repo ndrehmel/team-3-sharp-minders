@@ -11,7 +11,8 @@ namespace levelup
         public record struct GameStatus(
             // TODO: Add other status data
             String characterName,
-            Point currentPosition
+            Point currentPosition,
+            Int32 MoveCount
         );
 
         // TODO: Ensure this AND CLI commands match domain model
