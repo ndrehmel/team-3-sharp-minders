@@ -5,7 +5,7 @@ public class Character {
 
     public string? Name{get; set;}
     public int? MoveCount {get; set;}
-    public Point Position (0,0);
+    public Point Position = new Point(0,0);
 
     public Character(){
         this.Name = "";
@@ -17,7 +17,7 @@ public class Character {
         this.MoveCount = 0;
     }
 
-    public Point SetPosition(Point pos){
+    public void SetPosition(Point pos){
         Position.X = pos.X;
         Position.Y = pos.Y;
     }
