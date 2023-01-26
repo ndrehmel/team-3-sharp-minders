@@ -26,7 +26,9 @@ namespace levelup
         {
 #pragma warning disable CS8602 // Rethrow to preserve stack details
             testObj.CreateCharacter("");
-            Assert.IsNotNull(testObj.status.characterName);
+            Assert.AreEqual(testObj.TestCharacterName, testObj.status.characterName);
+            Assert.AreEqual(testObj.charObj.Name, testObj.status.characterName);
+            //Assert.IsNotNull(testObj.status.characterName);
         }
     }
 }
