@@ -20,7 +20,7 @@ namespace levelup
             NORTH, SOUTH, EAST, WEST
         }
 
-        GameStatus status = new GameStatus();
+        public GameStatus status = new GameStatus();
 
         public GameController()
         {
@@ -33,7 +33,7 @@ namespace levelup
             //TO DO
 
         }
-        
+
         // Pre-implemented to demonstrate ATDD
         // TODO: Update this if it does not match your design
         public void CreateCharacter(String name)
