@@ -22,7 +22,7 @@ public class Character {
         Position.Y = pos.Y;
     }
 
-    public string GetPosition(){
+    public string GetStatus(){
         return "Character " + this.Name + " is on {" + Position.X.ToString() + "," + Position.Y.ToString() + "} and your Move Count is :" + MoveCount.ToString();
     } 
 }
