@@ -1,3 +1,4 @@
+namespace levelup{
 public class Character {
 
     public string? Name{get; set;}
@@ -12,4 +13,5 @@ public class Character {
         this.Name = name;
         this.MoveCount = 0;
     }
+}
 }
