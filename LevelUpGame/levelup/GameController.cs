@@ -62,7 +62,7 @@ namespace levelup
 
         public GameStatus GetStatus()
         {
-            return this.status;
+            return charObj.GetStatus();
         }
 
         public void Move(DIRECTION directionToMove)
