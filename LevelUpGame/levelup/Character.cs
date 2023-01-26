@@ -24,7 +24,7 @@ public class Character {
 
     public GameController.GameStatus GetStatus(){
         //return "Character " + this.Name + " is on {" + Position.X.ToString() + "," + Position.Y.ToString() + "} and your Move Count is :" + MoveCount.ToString();
-        GameController.GameStatus currStatus = new GameController.GameStatus(this.Name, this.Position);
+        GameController.GameStatus currStatus = new GameController.GameStatus(this.Name, this.Position, (Int32)this.MoveCount);
         return currStatus;
     } 
 }
