@@ -34,7 +34,7 @@ namespace levelup
                 currentPosition.X += 1;
             }
             bool validation = this.validatePosition(currentPosition);
-            if (validation = false)
+            if (validation == false)
             {
                 currentPosition = startingPosition;
             }
