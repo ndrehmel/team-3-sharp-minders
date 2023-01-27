@@ -1,4 +1,5 @@
 using System.Drawing;
+using levelup;
 
 namespace levelup
 {
@@ -28,6 +29,7 @@ namespace levelup
         {
             status.characterName = DEFAULT_CHARACTER_NAME;
             status.currentPosition = new Point(-1,-1);
+            gmObj = new GameMap();
         }
 
         public void SetCharacterPosition(Point coordinates)
@@ -65,9 +67,9 @@ namespace levelup
             return charObj.GetStatus();
         }
 
-        public void Move(DIRECTION directionToMove, GameMap gmObj)
+        public void Move(DIRECTION directionToMove)
         {
-            charObj.Move(directionToMove, gmObj);
+            charObj.Move(directionToMove, this.gmObj);
         }
 
 
