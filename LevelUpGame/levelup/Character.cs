@@ -22,10 +22,10 @@ public class Character {
         Position.Y = pos.Y;
     }
 
-    public void Move(GameController.DIRECTION dir){
+    public void Move(GameController.DIRECTION dir, GameMap gm){
         Point currPos = new Point(this.Position.X, this.Position.Y);
         Point newPos = new Point();
-        newPos = GameController.gmObj.calculatePosition(currPos, dir);
+        newPos = gm.calculatePosition(currPos, dir);
         SetPosition(newPos);
         MoveCount=+1;
     }
