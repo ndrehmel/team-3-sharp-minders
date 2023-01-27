@@ -7,6 +7,7 @@ namespace levelup
         // TODO: If your stakeholder wants to call this CHARACTER, change var name for
         // low representational gap
         public readonly string DEFAULT_CHARACTER_NAME = "Character";
+        public GameMap gmObj;
 
         public record struct GameStatus(
             // TODO: Add other status data
@@ -56,9 +57,7 @@ namespace levelup
 
         public void StartGame()
         {
-            // TODO: Implement startGame - Should probably create tiles and put the character
-            // on them?
-            // TODO: Should also update the game status?
+            gmObj = new GameMap();
         }
 
         public GameStatus GetStatus()
