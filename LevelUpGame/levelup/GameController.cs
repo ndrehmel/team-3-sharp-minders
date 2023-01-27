@@ -65,10 +65,9 @@ namespace levelup
             return charObj.GetStatus();
         }
 
-        public void Move(DIRECTION directionToMove)
+        public void Move(DIRECTION directionToMove, GameMap gmObj)
         {
-            //TODO: Implement move - should call something on another class
-            //TODO: Should probably also update the game status
+            charObj.Move(directionToMove, gmObj);
         }
 
 
