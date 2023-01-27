@@ -23,10 +23,9 @@ public class Character {
     }
 
     public void Move(GameController.DIRECTION dir){
-        GameMap gp = new GameMap();
         Point currPos = new Point(this.Position.X, this.Position.Y);
         Point newPos = new Point();
-        newPos = (gp.calculatePosition(currPos, dir));
+        newPos = GameController.gmObj.calculatePosition(currPos, dir);
         SetPosition(newPos);
         MoveCount=+1;
     }
