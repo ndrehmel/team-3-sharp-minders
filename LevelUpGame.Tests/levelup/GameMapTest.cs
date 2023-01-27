@@ -55,5 +55,46 @@ namespace levelup
             Assert.AreEqual(test.X, 4);
             Assert.AreEqual(test.Y, 5);
         }
+    [Test]
+        public void Validate55()
+        {
+#pragma warning disable CS8602 // Rethrow to preserve stack details
+            Point test = new Point(5,5);
+            bool validation = testObj.validatePosition(test);
+            Assert.AreEqual(validation, true);
+        }
+
+        [Test]
+        public void ValidateStep109()
+        {
+#pragma warning disable CS8602 // Rethrow to preserve stack details
+            Point test = new Point(10,9);
+            bool validation = testObj.validatePosition(test);
+            Assert.AreEqual(validation, false);
+        }
+      [Test]
+        public void ValidateStep810()
+        {
+#pragma warning disable CS8602 // Rethrow to preserve stack details
+            Point test = new Point(8,10);
+            bool validation = testObj.validatePosition(test);
+            Assert.AreEqual(validation, false);
+        }
+    [Test]
+        public void ValidateStepneg17()
+        {
+#pragma warning disable CS8602 // Rethrow to preserve stack details
+            Point test = new Point(-1,7);
+            bool validation = testObj.validatePosition(test);
+            Assert.AreEqual(validation, false);
+        }
+        [Test]
+        public void ValidateStep8neg1()
+        {
+#pragma warning disable CS8602 // Rethrow to preserve stack details
+            Point test = new Point(8,-1);
+            bool validation = testObj.validatePosition(test);
+            Assert.AreEqual(validation, false);
+        }
     }
 }
