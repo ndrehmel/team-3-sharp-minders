@@ -17,7 +17,20 @@ namespace levelup
             {
                 currentPosition.Y += 1;
             }
+            else if (GameController.DIRECTION.SOUTH == direction)
+            {
+                currentPosition.Y -= 1;
+            }
+            else if (GameController.DIRECTION.WEST == direction)
+            {
+                currentPosition.X -= 1;
+            }
+            else if (GameController.DIRECTION.EAST == direction)
+            {
+                currentPosition.X += 1;
+            }
             return currentPosition;
+
         }
     }
 }
