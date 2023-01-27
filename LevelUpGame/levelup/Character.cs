@@ -22,6 +22,15 @@ public class Character {
         Position.Y = pos.Y;
     }
 
+    public void Move(GameController.DIRECTION dir){
+        GameMap gp = new GameMap();
+        Point currPos = new Point(this.Position.X, this.Position.Y);
+        Point newPos = new Point();
+        newPos = (gp.calculatePosition(currPos, dir));
+        SetPosition(newPos);
+        MoveCount=+1;
+    }
+
     public GameController.GameStatus GetStatus(){
         //return "Character " + this.Name + " is on {" + Position.X.ToString() + "," + Position.Y.ToString() + "} and your Move Count is :" + MoveCount.ToString();
         GameController.GameStatus currStatus = new GameController.GameStatus(this.Name, this.Position, (Int32)this.MoveCount);
