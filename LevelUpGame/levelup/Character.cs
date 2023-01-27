@@ -27,7 +27,7 @@ public class Character {
         Point newPos = new Point();
         newPos = gm.calculatePosition(currPos, dir);
         SetPosition(newPos);
-        MoveCount=+1;
+        MoveCount++;
     }
 
     public GameController.GameStatus GetStatus(){
